@@ -36,12 +36,12 @@ var platforms = [
     osDetectionString: "not-to-be-detected"
   },
   /*{
-    officialName: "Linux arm",
-    searchableName: "ARM_LINUX",
-    logo: "linux.png",
+    officialName: "Linux ARM32",
+    searchableName: "ARM32_LINUX",
+    logo: "arm.png",
     fileExtension: ".tar.gz",
     requirements: "GLIBC 2.5 and above",
-    architecture: "64",
+    architecture: "32",
     osDetectionString: "not-to-be-detected"
   },*/
   /*{
@@ -51,7 +51,7 @@ var platforms = [
     fileExtension: ".zip",
     requirements: "VS 2010 and above",
     architecture: "64",
-    osDetectionString: "Windows Win Cygwin"
+    osDetectionString: "Windows Cygwin"
   }*/
   {
     officialName: "macOS x86-64",
