@@ -82,7 +82,7 @@ function buildHomepageHTML(releasesJson) {
   // if there IS a matching binary for the user's OS...
   if(matchingBinary) {
     dlLatest.href = matchingBinary.browser_download_url; // set the main download button's link to be the binary's download url
-    dlText.innerHTML = ('Download for <var platform-name>' + OS.officialName + '</var>'); // set the text to be OS-specific, using the full OS name.
+    document.getElementById('platform-specific').innerHTML = (' for <var platform-name>' + OS.officialName + '</var>'); // set the text to be OS-specific, using the full OS name.
     var thisBinarySize = Math.floor((matchingBinary.size)/1024/1024);
     dlVersionText.innerHTML += (' - ' + thisBinarySize + ' MB');
     if(matchingBinary.jck === true) {
@@ -95,7 +95,6 @@ function buildHomepageHTML(releasesJson) {
     dlOther.className += ' hide'; // hide the 'Other platforms' button
     dlIcon.className += ' hide'; // hide the download icon on the main button, to make it look less like you're going to get a download immediately
     dlIcon2.className = dlIcon2.className.replace( /(?:^|\s)hide(?!\S)/g , '' ); // un-hide an arrow-right icon to show instead
-    dlText.innerHTML = ('Downloads'); // change the text to be generic: 'Downloads'.
     dlLatest.href = './releases.html'; // set the main download button's link to the latest builds page for all platforms.
   }
 

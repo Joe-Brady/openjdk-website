@@ -417,8 +417,9 @@ code.hljs {
 
 // SELECT ELEMENT - REMOVING DEFAULT STYLING
 select#variant-selector {
-  // CHANGE FROM DISPLAY NONE TO DISPLAY BLOCK TO ACTIVATE VARIANT SELECTOR
-  display: none;
+  // CHANGE FROM DISPLAY NONE TO DISPLAY BLOCK (AND REMOVE THE !IMPORTANT) TO ACTIVATE VARIANT SELECTOR
+  display: none !important;
+  color: $mainblue;
   margin: auto;
   margin-top: 2rem;
   -webkit-appearance: none;

@@ -27,7 +27,7 @@
       "osDetectionString": "Windows Win Cygwin Windows Server 2008 R2 / 7 Windows Server 2008 / Vista Windows XP"
     },
     {
-      "officialName": "macOS x64",
+      "officialName": "macOS",
       "searchableName": "X64_MAC",
       "logo": "mac.png",
       "binaryExtension": ".tar.gz",
